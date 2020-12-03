@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Game Simon</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Simon Dice</h1>
+    </header>
+    <main class="main">
+        <div id="idGameBoard" class="gameBoard">
+            <div id="opt1" class="option color1" data-color="celeste"></div>
+            <div id="opt2" class="option color2" data-color="violeta"></div>
+            <div id="opt3" class="option color3" data-color="verde"></div>
+            <div id="opt4" class="option color4" data-color="naranja"></div>
+        </div>
+        <button id="idBtnStart" class="btnStart" onclick="empezarJuego()">Empezar Juego</button>
+    </main>
+
+    <section id="idPopUp" class="popUp">
+        <div class="modal">
+            <img src="../img/Icon-popUp-info.svg" alt="icono-popUp">
+            <p>Felicidades Ganaste</p>
+            <button onclick="reiniciarJuego()">Juga de nuevo</button>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

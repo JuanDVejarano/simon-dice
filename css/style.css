@@ -1,0 +1,50 @@
+@font-face { font-family: 'Nerko'; src: url(../fonts/NerkoOne-Regular.ttf); }
+
+* { padding: 0; margin: 0; outline: none; border: 0; border-width: 0; }
+
+input:matches( [type="email"], [type="number"], [type="password"], [type="search"], [type="tel"], [type="text"], [type="url"]) { -webkit-appearance: none; -moz-appearance: none; box-shadow: none; }
+
+.header { background-color: #1f4b65; height: 72px; display: flex; justify-content: center; align-items: center; }
+
+.header h1 { color: aliceblue; }
+
+.main { position: relative; height: calc(100vh - 72px); width: 100vw; display: flex; justify-content: center; align-items: center; }
+
+.gameBoard { height: 76vw; width: 76vw; border-radius: 50%; overflow: hidden; margin: auto; max-height: 70vh; max-width: 70vh; display: flex; flex-wrap: wrap; opacity: 0.9; pointer-events: none; transition: all ease 1s; }
+
+.gameBoard--active { pointer-events: initial; opacity: 1; }
+
+.option { width: 50%; height: 50%; }
+
+.color1 { background-color: #2d9da9; }
+
+.color1--light { background-color: #7ed6df; }
+
+.color2 { background-color: #b337cd; }
+
+.color2--light { background-color: #e056fd; }
+
+.color3 { background-color: #6da651; }
+
+.color3--light { background-color: #89ce6b; }
+
+.color4 { background-color: #de8c35; }
+
+.color4--light { background-color: #ffbe76; }
+
+.btnStart { position: absolute; display: block; font-family: "Nerko", sans-serif; font-size: 7vw; padding: 10px; max-width: 750px; height: auto; color: #513e4d; width: 81%; border-radius: 51px; border: 4px solid #98ca3f; }
+
+.btnStart--hidden { display: none; }
+
+.popUp { position: fixed; height: 100vh; width: 100vw; background-color: rgba(3, 3, 3, 0.6); top: 0; right: 0; bottom: 0; left: 0; display: none; flex-direction: column; align-items: center; justify-content: center; }
+
+.popUp .modal { display: flex; flex-direction: column; align-items: center; padding: 24px; background-color: #ffffff; border-radius: 10px; max-width: 69vw; min-width: 281px; }
+
+.popUp .modal img { width: 79px; margin-bottom: 15px; }
+
+.popUp .modal p { font-family: 'Nerko'; font-size: 43px; text-align: center; width: 80%; margin-bottom: 15px; }
+
+.popUp .modal button { width: 47%; height: 33px; min-width: 163px; font-size: 17px; background-color: initial; border-radius: 20px; color: #15161b; border: 1px solid #1f4b65; }
+
+.popUp--open { display: flex; }
+/*# sourceMappingURL=style.css.map */

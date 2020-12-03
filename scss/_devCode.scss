@@ -1,0 +1,17 @@
+@font-face{
+    font-family: 'Nerko';
+    src: url(../fonts/NerkoOne-Regular.ttf);
+}
+
+$fontNerko: 'Nerko', sans-serif;
+
+$colorSimon: (
+    color1: #2d9da9,
+    color1--light: #7ed6df,
+    color2: #b337cd,
+    color2--light: #e056fd,
+    color3: #6da651,
+    color3--light: #89ce6b,
+    color4: #de8c35,
+    color4--light: #ffbe76
+)

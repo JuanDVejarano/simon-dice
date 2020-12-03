@@ -1,0 +1,29 @@
+.gameBoard{
+    height: 76vw;
+    width: 76vw;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    max-height: 70vh;
+    max-width: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.9;
+    pointer-events: none;
+    transition: all ease 1s;
+    &--active{
+        pointer-events: initial;
+        opacity: 1;
+    }
+}
+
+.option{
+    width: 50%;
+    height: 50%;
+}
+
+@each $item, $valor in $colorSimon {
+    .#{$item}{
+        background-color: $valor;
+    }
+}
